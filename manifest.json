@@ -1,6 +1,7 @@
 {
   "name": "Vitaliy Loyko",
   "short_name": "VL",
+  "description": "My resume",
   "icons": [
     {
       "src": "/assets/favicon/favicon-192x192.png",
