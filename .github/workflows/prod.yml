@@ -1,0 +1,20 @@
+name: PROD-DEPLOY-TO-ZEIT
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: amondnet/now-deployment@v2
+        with:
+          zeit-token: ${{ secrets.ZEIT_TOKEN }} 
+          now-org-id: ${{ secrets.ORG_ID}}  
+          now-project-id: ${{ secrets.PROJECT_ID}} 
+          now-args: '--prod'
