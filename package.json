@@ -1,0 +1,24 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "My resume",
+  "main": "index.html",
+  "scripts": {
+    "checkStyles": "stylelint \"assets/css/*.css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loyko-vitaliy/homepage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loyko-vitaliy/homepage/issues"
+  },
+  "homepage": "https://github.com/loyko-vitaliy/homepage#readme",
+  "devDependencies": {
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0"
+  }
+}
